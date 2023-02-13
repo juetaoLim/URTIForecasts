@@ -1,0 +1,11 @@
+# Forecasting upper respiratory tract infection burden using high-dimensional time series data and forecast combinations
+Contributors: Jue Tao Lim<sup>1</sup>, Kelvin Bryan Tan<sup>2,4</sup>, John Abisheganaden<sup>1,3</sup>, Borame L. Dickens, Borame Sue Lee Dickens<sup>4</sup>
+
+## Affliations
+<sup>1</sup>Lee Kong Chian School of Medicine, Nanyang Technological University, SG<br/>
+<sup>2</sup>Ministry of Health, SG<br/>
+<sup>3</sup>Tan Tock Seng Hospital, SG<br/>
+<sup>4</sup>Saw Swee Hock School of Public Health, National University of Singapore, SG
+
+## Motivation and Objectives:
+Upper respiratory tract infections (URTIs) represent a large strain on primary health resources. To mitigate URTI transmission and public health burdens, it is important to pre-empt and provide forward guidance on URTI burden, while taking into account various facets which influence URTI transmission. This is so that appropriate public health measures can be taken to mitigate strain on primary care resources. This study describes a new approach to forecasting URTIs which can be used for national public health resource planning. Specifically, using environmental and disease data comprising more than 1000 dimensions, we developed sub-models which optimizes model explainability, in-sample model fit, predictive accuracy and combines many weaker predictors over a 2-month time horizon to generate direct, point forecasts over a 1–8 week ahead forecast horizon. Predictive performance was evaluated using rolling out-of-sample forecast assessment within both periods with/without structural breaks in transmission over the period of 2012–2022. We showed that forecast combinations of 5 other forecasting models had better and more consistent predictive performance than other modelling approaches, over periods with and without structural breaks in transmission dynamics. Furthermore, epidemiological analysis on high dimensional data was enabled using post-selection inference, to show the dynamic association between lower temperature, increases in past relative humidity and absolute humidity and increased URTIs attendance. The methods proposed can be used for outbreak preparedness and guide healthcare resource planning, in both stable periods of transmission and periods where structural breaks in data occur.
