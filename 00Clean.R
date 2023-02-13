@@ -1,7 +1,7 @@
 rm(list=ls())
 library(readxl)
 library(dplyr)
-cd <- "C:/Users/juetao.lim/OneDrive - Nanyang Technological University/forecastSG/" 
+cd <- ""  #change to own directory here 
 read_excel_allsheets <- function(filename, tibble = FALSE) {
   sheets <- readxl::excel_sheets(filename)
   x <- lapply(sheets, function(X) readxl::read_excel(filename, sheet = X))
@@ -51,17 +51,6 @@ df.csv <- df.csv %>% mutate(epiInd = paste0("20",substr(df.csv$dateV,start=7,sto
             max_lfi = max(VLeafareaindexHIGH_ind,na.rm=T))
 
 df_all <- merge(df_all,df.csv,by='epiInd')
-
-# test <- df_all
-# test$Epidemiology.Wk <- NULL
-# test$Start.to.End <- NULL
-# test$epiInd <- NULL
-# 
-# for (i in 1:ncol(test)){
-#   
-#   try(plot.ts(as.numeric(test[,i]),main=colnames(test)[i]))
-#   
-# }
 
 
 save(df_all,file=paste0(cd,"/out/merged_2021-2012.rds"))
