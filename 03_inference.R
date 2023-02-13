@@ -2,7 +2,7 @@
 rm(list=ls())
 require(glmnet)
 require(stargazer)
-cd <- "~/OneDrive - Nanyang Technological University/forecastSG/" 
+cd <- ""  #change to own directory here
 files <- list.files(paste0(cd,"out/forecast_df/"))
 source(paste0(cd,"functions/forecasts.R"))
 #create directory for forecasts to be stored
