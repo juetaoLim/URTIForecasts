@@ -1,6 +1,6 @@
 ##generates forecast dataframes for seperate conditions for forecasts to be assessed upon
 rm(list=ls())
-cd <- "C:/Users/juetao.lim/OneDrive - Nanyang Technological University/forecastSG/" 
+cd <- ""  #change to own directory here
 load(file=paste(cd,"out/merged_2021-2012.rds",sep=""))
 #order dataframe according to dates
 df_all <- df_all[order(df_all$epiInd),]
